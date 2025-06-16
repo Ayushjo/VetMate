@@ -10,7 +10,7 @@ export const UserContextProvider = ({ children }) => {
   const getResult = async (message) => {
     try {
       const res = await axios.post(
-        "http://127.0.0.1:3636/users/api/diagnosis",
+        "https://vetmate-backend.onrender.com/users/api/diagnosis",
         {
           message,
         }
